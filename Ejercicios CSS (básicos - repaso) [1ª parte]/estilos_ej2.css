@@ -1,0 +1,31 @@
+body{
+    background-color: #778899;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+main{
+    font-family: Cambria;
+    font-weight: 600;
+}
+h2{
+    text-align: center;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+i{
+    visibility: hidden;
+}
+
+p{
+    text-align: justify;
+    font-size: 20px;
+    font-variant: small-caps;
+    line-height: 2;
+    text-indent: 32px;
+}
+span{
+    text-decoration: underline;
+    font-style: oblique;
+}

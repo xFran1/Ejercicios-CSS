@@ -1,0 +1,27 @@
+:root{
+    --miguel: aquamarine;
+}
+
+.parrafo_destacado{
+    font-size: 0.8rem;
+    font-style: italic;
+    color: var(--miguel);
+}
+
+.parrafo_estandar{
+    font-size: 1.2rem;
+    color: blue;
+
+}
+
+h2{
+color: green;
+font-family: "Sixtyfour Convergence", sans-serif;
+
+}
+
+p{
+color: goldenrod;
+font-family: "Edu AU VIC WA NT Dots", cursive;
+
+}

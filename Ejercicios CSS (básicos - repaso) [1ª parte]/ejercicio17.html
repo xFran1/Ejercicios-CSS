@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>AW-CSS ejercicio 3</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+<style>
+:root{
+    --color1: aquamarine;
+    --color2:blue;
+    --color3:green;
+    --color4:goldenrod;
+    --style:"italic";
+}
+
+.parrafo_destacado{
+    font-size: 0.8rem;
+    font-style: italic;
+    color: var(--color1);
+}
+
+.parrafo_estandar{
+    font-size: 1.2rem;
+    color: var(--color2);
+
+}
+
+h2{
+color: var(--color3);
+font-family: "Sixtyfour Convergence", sans-serif;
+
+}
+
+p{
+color: var(--color4);
+font-family: "Edu AU VIC WA NT Dots", cursive;
+
+}
+</style>
+</head>
+<body>
+
+   <h1>Estilos CSS: las clases</h1>
+   <p class="parrafo_destacado">Dentro de la hoja se pueden aplicar distintos estilos según la clase de etiqueta. La clase se puede especificar con el atributo <span>class</span>.</p>
+   <p class="parrafo_estandar">En el fichero CSS una clase se define con un nombre precedido por un punto como por ejemplo: <b>.párrafo_estandar</b> { propiedad1:valor1; propiedad2: valor2 }</p>
+   <h2>Etiquetas &lt;p&gt; con distinta clase</h2>
+   <p>Este es el párrafo con el estilo parrafo_destacado especificado en la hoja de estilos.</p>
+   <p>Este en cambio es un párrafo con el estilo parrafo_estandar que tiene propiedades distintas.</p>
+   <i class="fa-solid fa-droplet"></i>
+   <i class="fa-solid fa-droplet"></i>
+   <i class="fa-solid fa-hospital"></i>
+   <i class="fa-solid fa-hospital"></i>
+   <script src="https://kit.fontawesome.com/358013c21d.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
+

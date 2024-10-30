@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ejercicio posicionado</title>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/ejercicio15_position.css"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+      }
+      body {
+        font-family: sans-serif;
+      }
+      h1 {
+        font-size: 3rem;
+        position: relative;
+        left: 50px;
+        top: 10px;
+        /* width: 80%; */
+        margin-bottom: 20px;
+        width: 90%;
+      }
+
+      /* Barra de navegación tipo sticky */
+
+      .sticky-menu {
+        background-color: darkslategray;
+        position: sticky;
+        top: 0px;
+        padding-left: 50px;
+        z-index: 3;
+      }
+
+      /* Enlaces */
+
+      .menu-element a {
+        color: white;
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      .menu-element a:hover {
+        text-decoration: underline;
+      }
+
+      .menu-element {
+        display: inline-block;
+        width: 150px;
+        padding: 20px;
+        text-align: center;
+      }
+
+      /* Banner */
+
+      .banner {
+        background-color: #add8e6;
+        height: 200px;
+        margin: 20px auto;
+        width: 80%;
+        /* Para colocar los (hijos) respecto a banner (padre) */
+        position: relative;
+      }
+
+      .logo {
+        height: 120px;
+        width: 120px;
+        position: absolute;
+      }
+
+      .logo1 {
+        background-color: darkolivegreen;
+
+        top: 50px;
+        left: 50px;
+        z-index: 1;
+      }
+
+      .logo2 {
+        background-color: darkorange;
+
+        top: 30px;
+        left: 100px;
+      }
+
+      /* Content */
+      .content{
+        background-color: darksalmon;
+        height: 500px;
+        margin: 20px auto;
+        width: 80%;
+
+        position: relative;
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+      }
+
+      .centered{
+        background-color: lightgreen;
+        height: 150px;
+        
+        text-align: center;
+        line-height: 150px;
+        width: 50%;
+        margin: 0 auto;
+        
+        top: 50%;
+        margin-top: -75px;
+        margin-left: 25%;
+        position: absolute;
+        
+                
+      }
+      .footer{
+        background-color: darkslategray;
+        position: fixed;
+        bottom: 0px;
+
+        width: 100%;
+        padding-left: 50px;
+        z-index: 2;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Título del sitio con desplazamiento relativo -->
+
+    <h1>Título del sitio</h1>
+
+    <!-- Menú tipo sticky fijo al llegar al borde superior de la pantalla -->
+
+    <nav class="sticky-menu">
+      <div class="menu-element"><a href="#">Inicio</a></div>
+      <div class="menu-element"><a href="#">Blog</a></div>
+      <div class="menu-element"><a href="#">Contacto</a></div>
+      <div class="menu-element"><a href="#">Acerca de</a></div>
+    </nav>
+
+    <section class="banner">
+      <h4>BANNER</h4>
+      <div class="logo logo1">LOGO</div>
+      <div class="logo logo2">BACKLOGO</div>
+    </section>
+
+    <main class="content">
+      <div class="centered">CONTENIDO CENTRADO HORIZONTAL Y VERTICAL</div>
+    </main>
+
+    <!-- footer fijo en pantalla -->
+    <footer class="footer">
+      <div class="menu-element"><a href="#">Inicio</a></div>
+      <div class="menu-element"><a href="#">Blog</a></div>
+      <div class="menu-element"><a href="#">Contacto</a></div>
+      <div class="menu-element"><a href="#">Acerca de</a></div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>AW CSS - Ejercicio 12</title>
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+	<style>
+		body{
+			margin: 0;
+			padding: 0;
+		}
+		div:nth-child(1){
+			background-color: lightgreen;
+ 			padding: 10px;	
+
+}
+ul:nth-of-type(1)>li{
+
+list-style: url(sushi-solid-24.png);
+
+}
+	
+		
+		
+		ul:nth-of-type(2){
+			
+			text-align: left;
+			background-color: rgb(107, 68, 68);
+			margin-top: 0px;
+			padding-left: 0px;
+		}
+		ul:nth-of-type(2)>li{
+			list-style: none;
+			text-align: left;
+			background-color: red;
+
+		}
+		ul:nth-of-type(3)>li{
+			list-style: none;
+			text-align: left;
+			background-color: rgb(99, 99, 99);
+			width: 120px;
+			border: 1px solid black;
+			
+		}
+		ul:nth-of-type(3){
+			padding-left: 0px;
+			margin-top: 0px;
+		}
+		ul:nth-of-type(4){
+			padding-left: 0px;
+			margin-top: 0px;
+			margin-bottom: 3px;
+		}
+		ul:nth-of-type(4)>li{
+			display: inline-block;
+			list-style: none;
+			text-align: left;
+			background-color: rgb(99, 99, 99);
+			width: 50px;
+			border: 1px solid black;
+			color: white;
+
+		}
+		ul:nth-of-type(4)>li>a{
+			text-decoration: none;
+			color: white;
+		}
+		ul:nth-of-type(4)>li>a:hover{
+			text-decoration: none;
+		background-color: white;
+		color: black;
+		}
+		#pie{
+			background-color: green;
+			text-align: center;
+			
+		}
+	</style>
+</head>
+<body>
+
+	<div id="cabecera">Diseño de listas con hojas de estilos</div>
+	
+	<div id="central">
+	<h2>Listas con estilo</h2>
+	<b>Lista sin estilo</b>
+	<ul>
+		<li><a href="enlace1">enlace1</a></li>
+		<li><a href="enlace2">enlace2</a></li>
+		<li><a href="enlace3">enlace3</a></li>
+		<li><a href="enlace4">enlace4</a></li>
+	</ul>
+	
+	<b>Lista con estilo 1:</b> UL <i>sin marcas y sin margen</i><br />
+	<ul id="lista1">
+		<li><a href="enlace1">enlace1</a></li>
+		<li><a href="enlace2">enlace2</a></li>
+		<li><a href="enlace3">enlace3</a></li>
+		<li><a href="enlace4">enlace4</a></li>
+	</ul>
+	
+	<b>Lista con estilo 2:</b><i>sin marcas y sin margen, y li con borde y color.</i><br />
+	<ul id="lista2">
+		<li><a href="enlace1">enlace1</a></li>
+		<li><a href="enlace2">enlace2</a></li>
+		<li><a href="enlace3">enlace3</a></li>
+		<li><a href="enlace4">enlace4</a></li>
+	</ul>
+	
+	<b>Lista con estilo 3:</b> <i>una lista horizontal</i><br />
+	<ul id="lista3">
+		<li><a href="enlace1">enlace1</a></li>
+		<li><a href="enlace2">enlace2</a></li>
+		<li><a href="enlace3">enlace3</a></li>
+		<li><a href="enlace4">enlace4</a></li>
+	</ul>
+	</div>
+	<div id="pie">&copy; Aplicaciones Web</div>
+
+</body>
+</html>
+
