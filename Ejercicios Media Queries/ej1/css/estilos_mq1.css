@@ -1,0 +1,62 @@
+
+
+*{
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+.container{
+    margin: 0 auto;
+    width: 90%;
+}
+.container > *{
+    height: 150px;
+    
+}
+
+header{
+    background-color: yellow;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.red{
+    background-color: red;
+}
+.green{
+    background-color: green;
+}
+.blue{
+    background-color: blue;
+}
+
+@media screen and (min-width:576px){
+    .red,.blue{
+        width: 50%;
+        float: left;
+    }
+
+    .green{
+        width: 100%;
+        float: left;
+    }
+    
+}
+
+@media screen and (min-width:992px){
+    .red,.blue,.green{
+        width: calc(100%/3);
+    }
+
+   
+    
+}
+
+@media screen and (orientation: landscape) {
+    header{
+        background-color: orange;
+    }
+}
