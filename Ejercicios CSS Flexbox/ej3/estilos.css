@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:url(hambur.jpg) no-repeat ;
+background-size: cover;
+background-position: center;
+
+    font-family: sans-serif;
+}
+main{
+    padding: 10px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    height: 100vh;
+}
+
+section:nth-child(2){
+    font-size: 15px;
+    align-self: center;
+}
+
+section:nth-child(3){
+    align-self: flex-end;
+    
+}
+section{
+    flex-wrap: wrap;
+    flex: 1 1 200px;
+}
+article{
+    background-color:#daa520 ;
+   
+    height: 200px;
+    text-align: center;
+    align-content: center;
+    
+}
+.article__ultimo{
+    height: 100px;
+}
+section:nth-child(3){
+background-color: red;
+}
+
+.background__none{
+    background-color: transparent;
+}
+
+#article__text{
+    font-size: 40px;
+}
+#text__yellow{
+    color: #daa520;
+    font-size: 26px;
+}
+#text__grey{
+    color: #EFEFE6;
+    font-size: 15px;
+}
+#text__white{
+    color: #FFFFFF;
+}
+
+@media screen and (max-width:768px){
+    main{
+        display: block;
+    }
+    article{
+        flex: 1 1 400px;
+
+    }
+    
+}

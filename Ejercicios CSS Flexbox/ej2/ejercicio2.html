@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        @font-face {
+            font-family: "Poppins";
+            src: url(fuente/Poppins/Poppins-Medium.ttf);
+        }
+        body{
+            background-color: #f2f2f2;
+            font-family: "Poppins";
+        }
+        header{
+            background-color: #133d63;
+            color: white;
+            height: 100px;
+            width: 100%;
+        }
+        .header__title{
+            text-align: center;
+            font-size: 25px;
+            padding-top: 10px;
+        }
+        .header__subtitle{
+            display: flex;
+            justify-content: space-between;
+            width: 200px;
+            margin: 0 auto;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        .main__svg{
+            margin: 0 auto;
+            margin-top: 40px;
+            width: 300px;
+        }
+        .main__svg img{
+            height: 300px;
+        }
+        .main__svg__image{
+            width: 100%;
+            height: 100%;
+        }
+        .main__info{
+            margin: 0 auto;
+            width: 350px;
+        }
+        .main__info__title{
+            width: 300px;
+            font-size: 35px;
+            text-align: left;
+            line-height: 50px;
+            font-weight: bold;
+        }
+        main{
+            max-width: 1200px;
+            width: 90%;
+            margin: 0 auto;
+        }
+        .main__info__subtitle{
+            font-size: 15px;
+            color: #A7A7A7;
+        }
+        .main__boton{
+            margin-top: 20px;
+            color: white;
+            background-color: #F8A825;
+            width: 180px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            border-radius: 5px;
+        }
+        @media screen and (min-width:768px){
+            
+            
+            header{
+                display: flex;
+                height: 70px;
+                align-items: center;
+            }
+            .header__title{
+                margin-left: 40px;
+                padding-top: 0px;
+
+            }
+            
+            .header__subtitle{
+                position: absolute;
+                right: 0;
+                margin-right: 50px;
+                
+            }
+            .main__svg{
+                width: 500px;
+
+            }
+            .main__container{
+                display:flex;
+                align-items: center;
+                flex-direction: row-reverse;
+                height: 850px;
+            }
+            .main__info__title{
+                width: 350px;
+            }
+            
+            
+
+            
+
+        }
+    </style>
+        <header>
+            <div class="header__title">Tienda online</div>
+            <div class="header__subtitle">
+                <div>Inicio</div>
+                <div>Carrito</div>
+                <div>Contacto</div>
+            </div>
+        </header>
+        <main>
+            <div class="main__container">
+
+        <div class="main__svg"><img class="main__svg__image" src="shopping.svg"></div>
+        <section class="main__info">
+
+       <div class="main__info__title">
+        <div>Se acerca el Black Friday...
+        </div>
+       </div>
+       
+        <article class="main__info__subtitle">15% de descuento en todos los productos</article>
+        <div class="main__boton">Ir a la tienda</div>
+         </section>
+        </div>
+
+       </main>
+
+
+</body>
+</html>
