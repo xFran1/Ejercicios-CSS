@@ -8,7 +8,8 @@ body{
 }
 
 main{
-    margin-top: 10px;
+position: relative;
+top: 10px;
     background-color: white;
     max-width: 1000px;
     min-height: auto;
@@ -92,6 +93,8 @@ header{
     background-color: #7688A9;
 }
 footer{
+    bottom: 0;
+    position: sticky;
     margin-top: 100px;
     background-color: #2D4571;
     height: 100px;
@@ -105,13 +108,16 @@ footer{
         background-color: white;
         max-width: 1000px;
         width: 90%;
-        margin-top: 10px;
+        height: 95vh;
+        padding-bottom: 15px;
+        position: sticky;
+        
     
     }
     .container{
+        height: 99%;
         width: 95%;
         padding-top: 5px;
-        padding-bottom: 20px;
         margin: 0 auto;
     }
     header{
@@ -135,7 +141,7 @@ footer{
         margin-right: 10px;
     }
     .blog{
-        
+
         width: 40%;
         float: right;
     }
@@ -150,6 +156,9 @@ footer{
         
     }
     footer{
-        margin-top: 600px;
+        position: sticky;
+        width: 100%;
+        top: 100%;
+        
     }
 }
