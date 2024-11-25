@@ -1,0 +1,97 @@
+body{
+    font-family: sans-serif;
+    background-color: white;height: 100vh;
+}
+.container{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-wrap: wrap;
+
+}
+card{
+min-width: 250px;
+max-width: 350px;
+border: 1px solid rgb(182, 182, 182);
+display: inline-block;
+flex: 1 1 350px;
+border-radius: 10px;
+height: 350px;
+background-color: white;
+
+
+
+
+}
+.card__title{
+    margin-top: 25px;
+    text-align: center;
+}
+.card__subtitle{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+}
+.card__info{
+    margin-top: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: grey;
+}
+.card__subinfo{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 12px;
+    color: grey;
+}
+.card__buttonwrap{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    color: white;
+    margin-bottom: 30px;
+}
+.card__button{
+    padding: 10px;
+    background-color: #26293A;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 30px;
+    font-size: 14px;
+
+}
+
+card:nth-child(2){
+    background-color: #5175FF;
+    color: white;
+    
+}
+card:nth-child(2)> .card__subinfo{
+    color: white;
+}
+
+card:nth-child(2)> .card__info{
+    color: white;
+}
+card:nth-child(2)> .card__buttonwrap>.card__button{
+    background-color: white;
+    color: #5175FF;
+    
+}
+@media screen and (min-width:576px){
+    
+    body{
+        background: linear-gradient(white 50%,#26293A 50%);
+        
+        
+    }
+    .container{
+        flex-wrap: initial;
+    }
+}
+
